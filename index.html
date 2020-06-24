@@ -28,9 +28,10 @@
 <main>
     <div class="container">
         <h1>Die Postleitzahl des Gastes eingeben</h1>
-        <h2></h2>
+        <h2 >Basis sind die aktuellen <a href="https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data?orderBy=cases7_per_100k&orderByAsc=false&selectedAttribute=cases7_per_100k&where=cases7_per_100k%20%3E%3D%20049%20AND%20cases7_per_100k%20%3C%3D%20468">Zahlen des RKI</a></h2>
+        <h3>Es werden nur lokal verarbeitet. Keine Daten werden gespeichert.</h3>
         <div class="search-box">
-            <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+            <div class="search-icon"><i class="fa fa- search-icon"></i></div>
             <form action="" class="search-form">
                 <input type="text" placeholder="Nach PLZ suchen" id="search" autocomplete="off">
             </form>
@@ -41,10 +42,10 @@
             <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
         </div>
         <br>
-        <div id="found" class="alert alert-success  fade" role="alert">
+        <div id="found" class="alert alert-danger  fade" role="alert">
             Postleitzahl wurde gefunden
         </div>
-        <div id="notvalid" class="alert alert-success  fade" role="alert">
+        <div id="notvalid" class="alert alert-warning  fade" role="alert">
             Postleitzahl nicht valide
         </div>
     </div>
